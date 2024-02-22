@@ -1,0 +1,192 @@
+/* For desktop: */
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* header style start */
+
+.header {
+  padding: 2% 3%;
+  height: 38vh;
+}
+.head-logo {
+  width: 47%;
+  text-align: right;
+  margin-top: -40px;
+}
+.head-text {
+  width: 53%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.head-nav {
+  text-align: center;
+  margin-top: 38px;
+}
+.head-nav a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  margin: 0px 30px;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.head-nav a:hover {
+  background-color: transparent;
+  color: white;
+  transform: scale(1.1);
+  letter-spacing: 1.2px;
+}
+/* header style end */
+
+/* profile style */
+
+.profile {
+  width: 100%;
+  height: 62vh;
+}
+
+.profile-text {
+  margin-top: -10px;
+}
+.profile-text h1 {
+  font-size: 32px;
+}
+
+/* profile style end */
+
+/* about me style */
+
+.about-me {
+  padding: 2% 3%;
+}
+.aboutme-img {
+  margin-top: 140px;
+}
+.aboutme-img img {
+  height: 220px;
+  width: 220px;
+}
+
+.aboutme-text {
+  margin-top: 60px;
+}
+.ab-p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.aboutme-text p {
+  padding: 11px 8px;
+}
+
+.aboutme-button {
+  margin-top: 50px;
+}
+
+.dotted-hr {
+  border: black 4px dotted;
+  border-bottom: none;
+  width: 100%;
+}
+
+/* about me style */
+
+/* experience style */
+
+.experience {
+  padding: 0% 3%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* contact me style start */
+
+.contact-me {
+  height: 80vh;
+  width: 100%;
+}
+
+.contact-me {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-me h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* achivment style start */
+.achivment {
+  height: 80vh;
+  padding: 1% 7%;
+}
+
+/* achivment style end */
+
+/* contact style start */
+.contact {
+  height: 80vh;
+  padding: 1% 6%;
+}
+
+/* contact  style end */
+
+/* contact me style end */
+
+/*  footer style  */
+
+.media-button a {
+  margin: 13px 15px;
+  margin-top: -10px;
+  margin-bottom: 45px;
+  transition: 0.3s ease;
+}
+.media-button a:hover {
+  box-shadow: 0px 3px 15px white;
+  margin-top: -20px;
+}
+
+/*  footer style  end*/
