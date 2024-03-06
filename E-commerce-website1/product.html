@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+
+   <!--- for mobile --->
+   <link 
+   rel="stylesheet" 
+   href="e-commerce1-mobile.css" 
+   media="screen and (max-width: 992px)"
+   type="text/css" 
+   />
+
+
+  <!--- for desktop ---->
+  <link
+    rel="stylesheet"
+    href="e-commerce1.css" 
+    type="text/css"
+  />
+
+
+
+    <!--- CDN --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+    
+
+
+
+
+     <!--- header start  --->
+
+     <nav>
+      <ul class="sidebar">
+         <li onclick=hideSidebar()><a href="#"> <h1> <i class="fa-solid fa-xmark"></i>   </h1> </a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="e-commerce1.html">Home</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="profile.html"> Profile </a></li>         
+         <li class="nav__list__m"><a class="nav__link__m" href="register.html">Register</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="login.html">Log-in</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="e-commerce1.html">Log-out</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="contact.html">Contact</a></li>
+         <li class="nav__list__m"><a href="cart.html" class="nav__link__m"> 
+         <span><i class="fa-solid fa-cart-shopping"></i></span>  Cart 3 products - $156 </a></li>
+      </ul>
+
+
+
+      <ul>
+          <li><a href="#"> <h1>Baicitra</h1> </a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="e-commerce1.html">Home</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="register.html">Register</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="login.html">Log-in</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="cart.html">Cart</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="contact.html">Contact</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="profile.html"> <img class="profile__img" 
+          src="https://i.postimg.cc/RCjZGkfg/Develop-a-mascot-logo-for-Baicitra-featuring-a.jpg" 
+          alt="profile photo"> </a></li>
+          <li class="hideOnDesk" class="nav__list__m"><a href="cart.html" class="nav__link__m"> 
+            <span><i class="fa-solid fa-cart-shopping"></i></span> </a></li>
+          <li class="menu-btn" onclick=showSidebar()><a href="#"> <i class="fa-solid fa-bars"></i>  </a></li>
+       </ul>
+     </nav>
+
+     <!--- header start  --->
+
+
+
+
+
+
+<!--- main start  --->
+<main>
+ 
+
+
+</main>
+<!--- main end  --->
+
+
+
+
+
+
+
+
+     <!--- footer start  --->
+     <footer class="footer">
+        <div>
+            <label for="subs">Subscribe to Newsletter : </label>
+            <input type="email" id="Subscribe" class="footer__input" placeholder="Your Email Address">
+             <button class="footer__btn">Subscribe</button>
+        </div>
+        <div>
+            <P>&copy; Copyright 2024 Baicitra. All rights reserved </P>
+        </div>
+     </footer>
+     <!--- footer start  --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+ <!--- javascript code start --->
+
+<script>
+
+
+  function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+  };
+  
+  function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+  };
+  
+  
+  </script>
+  
+ <!--- javascript code end --->
+
+</body>
+</html>

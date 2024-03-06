@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+
+   <!--- for mobile --->
+   <link 
+   rel="stylesheet" 
+   href="e-commerce1-mobile.css" 
+   media="screen and (max-width: 992px)"
+   type="text/css" 
+   />
+
+
+  <!--- for desktop ---->
+  <link
+    rel="stylesheet"
+    href="e-commerce1.css" 
+    type="text/css"
+  />
+
+
+
+    <!--- CDN --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+    
+
+
+
+
+     <!--- navbar start  --->
+
+     <nav>
+      <ul class="sidebar">
+         <li onclick=hideSidebar()><a href="#"> <h1> <i class="fa-solid fa-xmark"></i>   </h1> </a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="e-commerce1.html">Home</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="profile.html"> Profile </a></li>         
+         <li class="nav__list__m"><a class="nav__link__m" href="register.html">Register</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="login.html">Log-in</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="e-commerce1.html">Log-out</a></li>
+         <li class="nav__list__m"><a class="nav__link__m" href="contact.html">Contact</a></li>
+         <li class="nav__list__m"><a href="cart.html" class="nav__link__m"> 
+         <span><i class="fa-solid fa-cart-shopping"></i></span>  Cart 3 products - $156 </a></li>
+      </ul>
+
+
+
+      <ul>
+          <li><a href="#"> <h1>Baicitra</h1> </a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="e-commerce1.html">Home</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="register.html">Register</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="login.html">Log-in</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="cart.html">Cart</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="contact.html">Contact</a></li>
+          <li class="hideOnMobile" class="nav__list"><a class="nav__link" href="profile.html"> <img class="profile__img" 
+          src="https://i.postimg.cc/RCjZGkfg/Develop-a-mascot-logo-for-Baicitra-featuring-a.jpg" 
+          alt="profile photo"> </a></li>
+          <li class="hideOnDesk" class="nav__list__m"><a href="cart.html" class="nav__link__m"> 
+            <span><i class="fa-solid fa-cart-shopping"></i></span> </a></li>
+          <li class="menu-btn" onclick=showSidebar()><a href="#"> <i class="fa-solid fa-bars"></i>  </a></li>
+       </ul>
+     </nav>
+
+     <!--- navbar end --->
+
+
+
+
+
+
+
+
+      <!--- header start --->
+
+      <header class="header">
+        <div class=" bannar">
+          <marquee class="banner__title" behavior="" direction=""> 35% Sales Going On </marquee>
+        
+        <div class="features">
+          <article class="feature">
+              <i class="fa-solid fa-truck feature__icon"></i>
+               <h3> Shipping within 7 days </h3>
+            </article>
+          <article class="feature">
+              <i class="fa-brands fa-rocketchat feature__icon"></i>
+               <h3> Support 24/7 </h3>
+            </article>
+          <article class="feature">
+              <i class="fa-regular fa-credit-card feature__icon"></i>
+               <h3> Safe payment </h3>
+            </article>
+        </div>
+      </div>
+      </header>
+
+      <!--- header end --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+     <!--- main start --->
+     
+     <main class="main">
+
+      <div class="main-sidebar"> 
+        <section class="categori-section">
+          <h3 class="section__title"> Categories </h3>
+          <ul>
+            <li class="list__item"> 
+              <label for="phone">
+                <input type="checkbox" name="phone" id="phone" value="phone">
+                Phone
+              </label>
+            </li>
+            <li class="list__item"> 
+              <label for="teblets">
+                <input type="checkbox" name="teblets" id="teblets" value="teblets">
+                Teblets
+              </label>
+            </li>
+            <li class="list__item"> 
+              <label for="telivisions">
+                <input type="checkbox" name="telivisions" id="telivisions" value="telivisions">
+                Telivisions
+              </label>
+            </li>
+            <li class="list__item"> 
+              <label for="desktop">
+                <input type="checkbox" name="desktop" id="desktop" value="desktop">
+                Desktop
+              </label>
+            </li>
+            <li class="list__item"> 
+              <label for="watch">
+                <input type="checkbox" name="watch" id="watch" value="watch">
+                Watch
+              </label>
+            </li>
+            <li class="list__item"> 
+              <label for="headphone">
+                <input type="checkbox" name="headphone" id="headphone" value="headphone">
+                Headphone
+              </label>
+            </li>
+          </ul>
+          </section>
+
+          <section class="price-section">
+            <h3 class="section__title"> Price Range </h3>
+            <ul>
+              <li class="list__item"> 
+                <label for="price1">
+                  <input type="checkbox" name="price1" id="price1" value="">
+                  $0 - $20
+                </label>
+              </li>
+              <li class="list__item"> 
+                <label for="price2">
+                  <input type="checkbox" name="price2" id="price2" value="">
+                  $20 - $50
+                </label>
+              </li>
+              <li class="list__item"> 
+                <label for="price3">
+                  <input type="checkbox" name="price3" id="price3" value="">
+                  $50 - $100
+                </label>
+              </li>
+              <li class="list__item"> 
+                <label for="price4">
+                  <input type="checkbox" name="price4" id="price4" value="">
+                  $100 - $200
+                </label>
+              </li>
+              <li class="list__item"> 
+                <label for="price5">
+                  <input type="checkbox" name="price5" id="price5" value="">
+                  $200 - $500
+                </label>
+              </li>
+              <li class="list__item"> 
+                <label for="price6">
+                  <input type="checkbox" name="price6" id="price6" value="">
+                  $500 - $1000
+                </label>
+              </li>            
+            </ul>
+            </section>
+
+            <section class="shipping-section">
+              <h3 class="section__title"> Shipping Options </h3>
+              <ul>
+                <li class="list__item"> 
+                  <label for="free">
+                    <input type="radio" name="free" id="free" value="">
+                    Free Shipping
+                  </label>
+                </li>
+                <li class="list__item"> 
+                  <label for="paid">
+                    <input type="radio" name="paid" id="paid" value="">
+                    Paid Shipping
+                  </label>
+                </li>               
+              </ul>
+            </section>
+      </div>
+
+
+
+      <div class="main-content">
+          <section class="action">
+            
+            <div class="action__sort">
+              <label for="sort">Sort By : </label>
+              <select name="sort" id="sort">
+                 <option value="sold"> Most Sold </option>
+                 <option value="rate"> Most Rated </option>
+                 <option value="new"> Newest </option>
+                 <option value="low-price"> Low Price </option>
+                 <option value="high-price"> High Price </option>
+                 <option value="discount"> Most Discount </option>
+              </select>
+            </div>
+
+            <div class="action__search">
+               <input type="text" placeholder="Search product..">
+                <button>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+          </section>
+
+          <!--- product section start --->
+          <section class="product-section">
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/Bbdjwf9z/pexels-pixabay-280250.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-23  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/65kZMnBQ/pexels-dzenina-lukac-815494.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-23  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/FK976x8h/pexels-tarek-shahin-12428373.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-23  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/kgPVQCy6/pexels-mnz-1598508.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-23  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/tJ76Mz1s/pexels-felipe-ferreira-701877.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-23  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/bJpH3bHn/pexels-jatin-anand-125779.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-27  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/d13DsVJX/pexels-garrett-morrow-1649771.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-27  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/d3RpGVZL/sharegrid-4-GRa-NC3-Nr-Ew-unsplash.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-27  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+
+             <article class="product commoon__card">
+                <div class="product__badge">
+                  <span> 35% </span> <br>                
+                  <span> off </span>
+                </div>
+                <img class="product__img" src="https://i.postimg.cc/Pr9W00QT/pexels-melvin-buezo-18946637.jpg" alt="product photo">
+                <div class="product__body">
+                   <h3 class="product__name"> Taitan w-27  </h3>
+                   <div class="dot">
+                   <span class="dot-green"></span>
+                   <span class="dot-red"></span>                  
+                   <span class="dot-black"></span>
+                   <span class="dot-white"></span>
+                   </div>
+                   <p class="product__desc">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Harum ducimus aut...
+                     <a class="learn__more" href="product.html"> Learn More </a>
+                   </p>
+                   <h4 class="product__price"> $124.99</h4>
+                   <p class="product__rating"> Rating: 4.7/5</p>
+                    <button class="product__button"> Add To Cart </button>
+                  </div>
+              </article>
+
+          </section>
+          <!--- product section end --->   
+                   
+          <!--- pagination start --->   
+            <div class="pagination">
+               <button class="pagination__btn"><i class="fas fa-less-than"></i></button>
+               <button class="pagination__btn">2</button>
+               <button class="pagination__btn">3</button>
+               <button class="pagination__btn">4</button>
+               <button class="pagination__btn">5</button>
+               <button class="pagination__btn">6</button>
+               <button class="pagination__btn">7</button>
+               <button class="pagination__btn">8</button>
+               <button class="pagination__btn">9</button>
+               <button class="pagination__btn">10</button>
+               <button class="pagination__btn">...</button>
+               <button class="pagination__btn">50</button>
+               <button class="pagination__btn"><i class="fas fa-greater-than"></i></button>
+            </div>
+          <!--- pagination end --->    
+             
+      </div>     
+     </main>
+
+     <!--- main end --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+     
+
+
+     <!--- footer start  --->
+     <footer class="footer">
+        <div>
+            <label for="subs">Subscribe to Newsletter : </label>
+            <input type="email" id="Subscribe" class="footer__input" placeholder="Your Email Address">
+             <button class="footer__btn">Subscribe</button>
+        </div>
+        <div>
+            <P>&copy; Copyright 2024 Baicitra. All rights reserved </P>
+        </div>
+     </footer>
+     <!--- footer start  --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+ <!--- javascript code start --->
+
+<script>
+
+
+  function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+  };
+  
+  function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+  };
+  
+  
+  </script>
+  
+ <!--- javascript code end --->
+
+</body>
+</html>
